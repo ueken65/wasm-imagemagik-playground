@@ -4,6 +4,8 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const Test = () => {
   const onDrop = (acceptedFiles: any) => {
+    toast('onDrop')
+    toast(acceptedFiles?.length)
     toast(acceptedFiles.toString())
   }
 
